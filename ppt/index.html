@@ -1,0 +1,107 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>reveal.js</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css' : 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h1>给新手的教程</h1>
+				<h2>10分钟做一个图像识别程序</h2>
+				<p>presented by lu.xuanqing</p>
+			</section>
+			<section>
+				<h2>面向人群</h2>
+				<table>
+					<thead>
+						<tr>
+							<th>等级</th>
+							<th>要求</th>
+							<th>收获</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td>0</td>
+							<td>会用手机拍视频，会操作电脑</td>
+							<td>傻瓜式地生成一个图像识别程序</td>
+						</tr>
+						<tr>
+							<td>1</td>
+							<td>写过Python代码</td>
+							<td>代码写得更好了、学会Keras常用API</td>
+						</tr>
+						<tr>
+							<td>2</td>
+							<td>理解机器学习及神经网络基本原理</td>
+							<td>学会从零快速构建一个模型和调整参数的方法</td>
+						</tr>
+						<tr>
+							<td>3</td>
+							<td>理解卷积神经网络</td>
+							<td>你太优秀了请出去</td>
+						</tr>
+					</tbody>
+				</table>
+			</section>
+			<section>
+				<ol>
+					<li>我讲解代码并演示</li>
+					<li>大家自己尝试，有问题找我</li>
+				</ol>
+			</section>
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			dependencies: [{
+					src: 'plugin/markdown/marked.js'
+				},
+				{
+					src: 'plugin/markdown/markdown.js'
+				},
+				{
+					src: 'plugin/notes/notes.js',
+					async: true
+				},
+				{
+					src: 'plugin/highlight/highlight.js',
+					async: true,
+					callback: function () {
+						hljs.initHighlightingOnLoad();
+					}
+				}
+			]
+		});
+	</script>
+</body>
+
+</html>
